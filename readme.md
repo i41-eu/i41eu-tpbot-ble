@@ -3,7 +3,7 @@
 BLE control for an ELECFREAKS TPBot car with a micro:bit V2. The micro:bit firmware is a BLE peripheral: it drives the car and reports the car's raw sensors. Its clients:
 
 - `tpbot`, a Linux laptop tool (here);
-- **Stackchan itself**, the usual way, as an optional extension of its Embody Mode: the [i41eu-embody firmware](https://github.com/i41-eu/i41eu-embody) has a BLE central for the car, so everything runs on the robot's one Wi-Fi connection. The car stays optional: most robots have none.
+- **Stackchan itself**, the usual way, as an optional extension of its Embody Mode: the [i41eu-StackChan firmware](https://github.com/i41-eu/i41eu-StackChan) has a BLE central for the car, so everything runs on the robot's one Wi-Fi connection. The car stays optional: most robots have none.
 - `tpbot-bridge` (here), for a car out of the robot's BLE range: a laptop or a Raspberry Pi near the car connects it over its own BLE to [q41eu-sbot](https://github.com/i41-eu/q41eu-sbot), the app server that manages a Stackchan and the car together.
 
 Part of [i41eu-arch](https://github.com/i41-eu/i41eu-arch), a local first, privacy first platform for a home, where the micro:bit is one light client.
@@ -145,7 +145,7 @@ Works on a micro:bit V2.2 in a TPBot V1, driven by `tpbot`, by `tpbot-bridge` an
 ## Related projects
 
 - [q41eu-sbot](https://github.com/i41-eu/q41eu-sbot): the app server with the cockpit (camera, joystick, safety stop) that drives the car; the `car_*` capability.
-- [i41eu-embody](https://github.com/i41-eu/i41eu-embody): Stackchan as the car's BLE central; enabling the car: [SETUP.md, Optional: drive a TPBot car](https://github.com/i41-eu/i41eu-embody/blob/main/firmware/main/apps/app_embody_mode/SETUP.md#optional-drive-a-tpbot-car).
+- [i41eu-StackChan](https://github.com/i41-eu/i41eu-StackChan): Stackchan as the car's BLE central; enabling the car: [SETUP.md, Optional: drive a TPBot car](https://github.com/i41-eu/i41eu-StackChan/blob/embody/firmware/main/apps/app_embody_mode/SETUP.md#optional-drive-a-tpbot-car).
 - [q41eu-raw](https://github.com/i41-eu/q41eu-raw): the `wire` package the bridge uses.
 - [i41eu-arch](https://github.com/i41-eu/i41eu-arch): the platform this is part of. All the repos: [The repos today](https://github.com/i41-eu/i41eu-arch#the-repos-today).
 
